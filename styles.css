@@ -3,3 +3,110 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --sidebar-clr: #2196F3;
+    --main_clr: #F5F5F5;
+    --card_clr: #FFFFFF;
+    --card_brd: 4px solid #FFC107;
+    --article_txt_clr: #757575;
+}
+
+html, body {
+    height: 100%;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100%;
+}
+
+.sidebar {
+    background-color: var(--sidebar-clr);
+    color: white;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.20fr 3fr;
+    gap: 5px;
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 20px;
+    line-height: 1.5rem;
+    font-weight: 600;
+    list-style: none;
+    margin: 15px;
+}
+
+.nav_one {
+    grid-row: 2 / 3;
+}
+
+.nav_two {
+    grid-row: 4 / 5;
+}
+
+.main {
+    background-color: var(--main_clr) ;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 40px 30px 20px 30px;
+}
+
+.projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.trendboard {
+    grid-row: 2 / 3;
+    grid-column: 2 / 2;
+}
+
+.card {
+    background-color: var(--card_clr);
+}
+
+.info {
+    background-color: var(--card_clr);
+}
+
+.trending {
+    background-color: var(--card_clr);
+}
+
+.btn_cntr {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+button {
+    background-color: var(--sidebar-clr);
+    border: 0;
+    border-radius: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2.2;
+    outline: transparent;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    margin-bottom: 30px;
+    flex: 1;
+}
