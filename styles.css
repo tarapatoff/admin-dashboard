@@ -18,6 +18,7 @@
     --tegan_bg_clr: #e0f2fe;
     --kendall_bg_clr: #a3a3a3;
     --alex_bg_clr: #fda4af;
+    --hr_clr:#d2d2d2;
 }
 
 html, body {
@@ -173,9 +174,8 @@ ul li > img {
 
     display: grid;
     grid-column-gap: 10px;
-    grid-row-gap: 75px;
+    grid-row-gap: 0px;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
     padding: 40px 30px 20px 20px;
 }
 
@@ -190,9 +190,14 @@ ul li > img {
     grid-row: 1 / 3;
 }
 
+.announcements {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
 .trendboard {
     grid-row: 2 / 3;
-    grid-column: 2 / 2;
+    grid-column: 2 / 3;
 }
 
 .trendboard_content {
@@ -228,6 +233,10 @@ ul li > img {
     grid-template-rows: 0.2fr 3fr 0.1fr;
 }
 
+.card > p:nth-child(1) {
+    font-weight: 700;
+}
+
 .card > p:nth-child(2) {
     color: var(--article_txt_clr);
 }
@@ -250,6 +259,12 @@ ul li > img {
     -webkit-box-shadow: 5px 5px 17px 1px rgba(0,0,0,0.16); 
     box-shadow: 5px 5px 17px 1px rgba(0,0,0,0.16);
     border-radius: var(--board_radius);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--hr_clr); 
+  margin: 0 30px;
 }
 
 .info {
@@ -305,6 +320,7 @@ button {
     border-radius: 50%;
     height: 50px;
     width: auto;
+    padding: 5px ;
 }
 
 .morgan_oakley {
