@@ -53,12 +53,6 @@ html, body {
     height: auto;
 }
 
-input {
-    flex: 1;
-    max-width: 700px;
-    line-height: 1.50rem;
-}
-
 .user_links {
     margin-left: auto;
     gap: 30px;
@@ -87,6 +81,9 @@ input {
     outline: none;
     border: 0;
     border-radius: 30px;
+    flex: 1;
+    max-width: 700px;
+    line-height: 1.50rem;
 }
 
 .usr_cntrl .morgan_oakley {
