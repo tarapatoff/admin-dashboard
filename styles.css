@@ -24,25 +24,32 @@ html, body {
     height: 100%;
     font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
+    height: 100%;
+    max-height: 100vh;
 }
 
 .container{
     display: grid;
     grid-template-columns: 1.3fr 5fr;
     grid-template-rows: 1fr 5fr;
-    height: 100%;
 }
 
 .header {
-    padding: 0px 50px 15px 40px ;
+    padding: 0px 40px 15px 40px ;
 }
 
 .search_section {
     padding: 20px;
     display: flex;
+    gap: 30px;
 
     justify-content: center;
     align-items: center;
+}
+
+.search_section > p {
+    width: 30px;
+    height: auto;
 }
 
 input {
@@ -53,7 +60,7 @@ input {
 
 .user_links {
     margin-left: auto;
-    gap: 25px;
+    gap: 30px;
     display: flex;
     align-items: center;
 }
@@ -61,6 +68,11 @@ input {
 .user_links > img {
     width: 35px;
     height: 35px;
+}
+
+.user_links > a:nth-child(1) {
+    width: 30px;
+    height: auto;
 }
 
 .user_links > a {
@@ -165,9 +177,6 @@ ul li > img {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     padding: 40px 30px 20px 20px;
-
-    height: 100%;
-    max-height: 100vh;
 }
 
 .projects > h3,
