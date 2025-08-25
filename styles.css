@@ -14,6 +14,10 @@
     --btn_card: #4f4f4f;
     --white-icons: brightness(0) invert(1);
     --board_radius: 12px;
+    --morgan_bg_clr: #facc15;
+    --tegan_bg_clr: #e0f2fe;
+    --kendall_bg_clr: #a3a3a3;
+    --alex_bg_clr: #fda4af;
 }
 
 html, body {
