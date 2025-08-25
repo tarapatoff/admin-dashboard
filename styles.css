@@ -34,14 +34,13 @@ html, body {
 }
 
 .header {
-    padding: 0px 50px 35px 40px ;
+    padding: 0px 50px 15px 40px ;
 }
 
 .search_section {
     padding: 20px;
     display: flex;
 
-    padding-bottom: 40px;
     justify-content: center;
     align-items: center;
 }
@@ -54,8 +53,9 @@ input {
 
 .user_links {
     margin-left: auto;
-    gap: 15px;
+    gap: 25px;
     display: flex;
+    align-items: center;
 }
 
 .user_links > img {
@@ -76,8 +76,14 @@ input {
     border-radius: 30px;
 }
 
+.usr_cntrl .morgan_oakley {
+    height: 85px;
+}
+
 .usr_cntrl {
     display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .welcome_usr {
@@ -274,4 +280,28 @@ button {
     touch-action: manipulation;
     white-space: nowrap;
     flex: 1;
+}
+
+/* Avatars */
+
+.img_usr {
+    border-radius: 50%;
+    height: 50px;
+    width: auto;
+}
+
+.morgan_oakley {
+    background-color: var(--morgan_bg_clr);
+}
+
+.tegan {
+    background-color: var(--tegan_bg_clr);
+}
+
+.alex {
+    background-color: var(--alex_bg_clr);
+}
+
+.kendall {
+    background-color: var(--kendall_bg_clr);
 }
